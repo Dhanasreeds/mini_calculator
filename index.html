@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arithmatic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h2>Calculator</h2>
+        <form action="">
+            <label for="a" class="num">Enter the number 1</label><br>
+            <input type="number" name="a" id="a"><br>
+            <label for="b" class="num">Enter the number 2</label><br>
+            <input type="number" name="b" id="b"><br>   
+            <button type="button"id="add" onclick="document.getElementById('result').textContent = 'Result :' + (parseFloat(document.getElementById('a').value) + parseFloat(document.getElementById('b').value)); document.getElementById('add').style.backgroundColor = '#ed7874' ">+</button>
+            <button type="button"id="sub" onclick="document.getElementById('result').textContent = 'Result :' + (parseFloat(document.getElementById('a').value) - parseFloat(document.getElementById('b').value)); document.getElementById('sub').style.backgroundColor = '#74edc5'">-</button>
+            <button type="button"id="multiple" onclick="document.getElementById('result').textContent = 'Result :' + (parseFloat(document.getElementById('a').value) * parseFloat(document.getElementById('b').value)); document.getElementById('multiple').style.backgroundColor = '#76ed74'">*</button>
+            <button type="button"id="divied" onclick="document.getElementById('result').textContent = 'Result :' + (parseFloat(document.getElementById('a').value) / parseFloat(document.getElementById('b').value)); document.getElementById('divied').style.backgroundColor = '#ed74b5'">/</button>
+            <button type="button" onclick="document.getElementById('a').value = ''; document.getElementById('b').value = '';document.getElementById('add').style.backgroundColor = 'black';document.getElementById('sub').style.backgroundColor = 'black';document.getElementById('multiple').style.backgroundColor = 'black';document.getElementById('divied').style.backgroundColor = 'black'; document.getElementById('result').textContent = 'Result: ';">Restart</button>
+        <p  id="result">Result </p>
+        </form>
+    </div>
+  
+</body>
+</html>
